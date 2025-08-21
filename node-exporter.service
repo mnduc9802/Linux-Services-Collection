@@ -6,8 +6,8 @@ After=network-online.target
 
 [Service]
 Type=simple
-User=prometheus
-Group=prometheus
+User=node-exporter
+Group=node-exporter
 ExecReload=/bin/kill -HUP $MAINPID
 ExecStart=/var/lib/node/node_exporter
 
