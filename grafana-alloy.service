@@ -10,7 +10,7 @@ User=alloy
 Environment=HOSTNAME=%H
 EnvironmentFile=/etc/default/alloy
 WorkingDirectory=/var/lib/alloy
-ExecStart=/usr/local/bin/alloy run  --storage.path=/var/lib/alloy --server.http.listen-addr=0.0.0.0:12345 $CONFIG_FILE
+ExecStart=/usr/local/bin/alloy run --storage.path=/var/lib/alloy --server.http.listen-addr=0.0.0.0:12345 $CONFIG_FILE
 ExecReload=/usr/bin/env kill -HUP $MAINPID
 TimeoutStopSec=20s
 SendSIGKILL=no
